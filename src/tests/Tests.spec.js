@@ -33,8 +33,7 @@ export function handleSummary(data) {
 }
 
 export default function () {
-  //const baseUrl = 'https://test.k6.io/';
-  const baseUrl = 'https://test.k6.io/';
+  const baseUrl = 'https://datausa.io/api/data?drilldowns=State&measures=Population&year=2022';
 
   const params = {
     headers: {
