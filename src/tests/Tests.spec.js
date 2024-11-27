@@ -14,8 +14,14 @@ export const options = {
     content_OK: ['rate>0.95']
   },
   stages: [
-    { duration: '10s', target: 5 },
-    { duration: '20s', target: 15 }
+    { duration: '15s', target: 10 },
+    { duration: '20s', target: 10 },
+    { duration: '20s', target: 15 },
+    { duration: '30s', target: 15 },
+    { duration: '30s', target: 25 },
+    { duration: '30s', target: 25 },
+    { duration: '25s', target: 40 },
+    { duration: '15s', target: 45 },
   ]
 };
 
@@ -27,6 +33,7 @@ export function handleSummary(data) {
 }
 
 export default function () {
+  //const baseUrl = 'https://test.k6.io/';
   const baseUrl = 'https://test.k6.io/';
 
   const params = {
